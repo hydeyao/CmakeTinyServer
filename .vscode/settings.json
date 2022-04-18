@@ -1,18 +1,22 @@
 {
     "cmake.configureOnOpen": true,
-    "sqltools.connections": [
-        {
-            "mysqlOptions": {
-                "authProtocol": "default"
-            },
-            "previewLimit": 50,
-            "server": "chuyang.xyz",
-            "port": 3306,
-            "askForPassword": true,
-            "driver": "MySQL",
-            "name": "tx_ubuntu",
-            "username": "root",
-            "database": "mysql"
-        }
-    ]
+    "files.associations": {
+        "*.tcc": "cpp",
+        "deque": "cpp",
+        "list": "cpp",
+        "string": "cpp",
+        "vector": "cpp",
+        "array": "cpp",
+        "string_view": "cpp",
+        "fstream": "cpp",
+        "istream": "cpp",
+        "sstream": "cpp",
+        "functional": "cpp",
+        "type_traits": "cpp",
+        "tuple": "cpp",
+        "numeric": "cpp",
+        "streambuf": "cpp",
+        "memory": "cpp",
+        "iostream": "cpp"
+    }
 }

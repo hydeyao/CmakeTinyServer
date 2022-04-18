@@ -71,10 +71,50 @@ MYSQL *db_conn_pool::getConnection()
 
 bool db_conn_pool::releaseConnection(MYSQL * con)
 {
-    
-    
-    
-    
-    
+    if (NULL == con)
+    {
+        return false;
+    }
 
+    m_lock.lock();
+    connList.push_back(con);
+    ++m_FreeConn;
+    --m_CurConn;
+
+    m_lock.unlock();
+    reserve.post();
+    return true;
+}
+
+void db_conn_pool::destroyPool()
+{
+    m_lock.lock();
+    if (connList.size()>0)
+    {
+        list<MYSQL *>::iterator iter;
+        for (iter = connList.begin();iter != connList.end(); iter++)
+        {
+            MYSQL *conn = *iter;
+            mysql_close(conn);
+        }
+        m_CurConn = 0;
+        m_FreeConn = 0;        
+    }
+    m_lock.unlock();
+}
+
+int db_conn_pool::getFreeConnection()
+{
+    return this->m_FreeConn;
+}
+
+connectionRAII::connectionRAII(MYSQL **conn,db_conn_pool *connPool)
+{
+    connRAII = *conn;
+    poolRAII = connPool;
+}
+
+connectionRAII::~connectionRAII()
+{
+    poolRAII->releaseConnection(connRAII);
 }
