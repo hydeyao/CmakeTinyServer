@@ -1,16 +1,8 @@
 #include <iostream>
 #include "./log/LOG.h"
 
-int get_factorial(int n)
-{
-    if (n == 1)
-    {
-        return 1;
-    }
-    return n * get_factorial(n - 1);
-}
-
 int main(int, char **)
-{    
+{ 
+    LOG::getInstance()->init("/home/hyde/log/smain.log",0);  
     return 0;
 }

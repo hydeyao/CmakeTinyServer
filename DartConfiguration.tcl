@@ -5,7 +5,7 @@
 
 # Configuration directories and files
 SourceDirectory: /home/hyde/SRC/CmakeTinyServer
-BuildDirectory: /home/hyde/SRC/CmakeTinyServer/build
+BuildDirectory: /home/hyde/SRC/CmakeTinyServer
 
 # Where to place the cost data store
 CostDataFile: 
@@ -28,7 +28,7 @@ NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
 ConfigureCommand: "/usr/bin/cmake" "/home/hyde/SRC/CmakeTinyServer"
-MakeCommand: /usr/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
+MakeCommand: /usr/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
 DefaultCTestConfigurationType: Release
 
 # version control

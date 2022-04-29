@@ -25,13 +25,14 @@
 *.la
 *.a
 *.lib
-/build
+build/
 # Executables
 *.exe
 *.out
 *.app
 
 #cmake
+*.cmake
 CMakeLists.txt.user
 CMakeCache.txt
 CMakeFiles

@@ -1,0 +1,28 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/hyde/SRC/CmakeTinyServer'
+/usr/bin/cmake -S/home/hyde/SRC/CmakeTinyServer -B/home/hyde/SRC/CmakeTinyServer --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /home/hyde/SRC/CmakeTinyServer/CMakeFiles /home/hyde/SRC/CmakeTinyServer//CMakeFiles/progress.marks
+make -s -f CMakeFiles/Makefile2 all
+make[1]: Entering directory '/home/hyde/SRC/CmakeTinyServer'
+make -s -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/depend
+make[2]: Entering directory '/home/hyde/SRC/CmakeTinyServer'
+cd /home/hyde/SRC/CmakeTinyServer && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/hyde/SRC/CmakeTinyServer /home/hyde/SRC/CmakeTinyServer /home/hyde/SRC/CmakeTinyServer /home/hyde/SRC/CmakeTinyServer /home/hyde/SRC/CmakeTinyServer/CMakeFiles/server.dir/DependInfo.cmake --color=
+make[2]: Leaving directory '/home/hyde/SRC/CmakeTinyServer'
+make -s -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/build
+make[2]: Entering directory '/home/hyde/SRC/CmakeTinyServer'
+/usr/bin/cmake -E cmake_echo_color --switch= --green --progress-dir=/home/hyde/SRC/CmakeTinyServer/CMakeFiles --progress-num=1 "Building CXX object CMakeFiles/server.dir/main.cpp.o"
+/usr/bin/c++    -MD -MT CMakeFiles/server.dir/main.cpp.o -MF CMakeFiles/server.dir/main.cpp.o.d -o CMakeFiles/server.dir/main.cpp.o -c /home/hyde/SRC/CmakeTinyServer/main.cpp
+/usr/bin/cmake -E cmake_echo_color --switch= --green --progress-dir=/home/hyde/SRC/CmakeTinyServer/CMakeFiles --progress-num=2 "Building CXX object CMakeFiles/server.dir/lock/locker.cpp.o"
+/usr/bin/c++    -MD -MT CMakeFiles/server.dir/lock/locker.cpp.o -MF CMakeFiles/server.dir/lock/locker.cpp.o.d -o CMakeFiles/server.dir/lock/locker.cpp.o -c /home/hyde/SRC/CmakeTinyServer/lock/locker.cpp
+/usr/bin/cmake -E cmake_echo_color --switch= --green --progress-dir=/home/hyde/SRC/CmakeTinyServer/CMakeFiles --progress-num=3 "Building CXX object CMakeFiles/server.dir/log/LOG.cpp.o"
+/usr/bin/c++    -MD -MT CMakeFiles/server.dir/log/LOG.cpp.o -MF CMakeFiles/server.dir/log/LOG.cpp.o.d -o CMakeFiles/server.dir/log/LOG.cpp.o -c /home/hyde/SRC/CmakeTinyServer/log/LOG.cpp
+/usr/bin/cmake -E cmake_echo_color --switch= --green --progress-dir=/home/hyde/SRC/CmakeTinyServer/CMakeFiles --progress-num=4 "Building CXX object CMakeFiles/server.dir/connect/db_conn_pool.cpp.o"
+/usr/bin/c++    -MD -MT CMakeFiles/server.dir/connect/db_conn_pool.cpp.o -MF CMakeFiles/server.dir/connect/db_conn_pool.cpp.o.d -o CMakeFiles/server.dir/connect/db_conn_pool.cpp.o -c /home/hyde/SRC/CmakeTinyServer/connect/db_conn_pool.cpp
+/usr/bin/cmake -E cmake_echo_color --switch= --green --bold --progress-dir=/home/hyde/SRC/CmakeTinyServer/CMakeFiles --progress-num=5 "Linking CXX executable server"
+/usr/bin/cmake -E cmake_link_script CMakeFiles/server.dir/link.txt --verbose=
+make[2]: Leaving directory '/home/hyde/SRC/CmakeTinyServer'
+/usr/bin/cmake -E cmake_echo_color --switch= --progress-dir=/home/hyde/SRC/CmakeTinyServer/CMakeFiles --progress-num=1,2,3,4,5 "Built target server"
+make[1]: Leaving directory '/home/hyde/SRC/CmakeTinyServer'
+/usr/bin/cmake -E cmake_progress_start /home/hyde/SRC/CmakeTinyServer/CMakeFiles 0
+make: Leaving directory '/home/hyde/SRC/CmakeTinyServer'
+ 
