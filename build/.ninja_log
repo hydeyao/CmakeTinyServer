@@ -1,5 +1,0 @@
-# ninja log v5
-205	250	1651200799818571168	server	b41006d5b1194b87
-0	205	1651200799775238507	CMakeFiles/server.dir/log/LOG.cpp.o	f2b8ea9a8805022a
-0	217	1651200395398214140	CMakeFiles/server.dir/main.cpp.o	984598035d0cc1e3
-0	46	1651199002032814092	CMakeFiles/server.dir/lock/locker.cpp.o	3174c4ead5981e36
